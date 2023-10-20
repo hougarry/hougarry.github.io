@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "AcademicPage-Resume"
+title                    : "Academic-Resume"
 title_separator          : "-"
 name                     : &name ""
 description              : &description "This is an academic resume for Gary Hou"
@@ -87,7 +87,7 @@ author:
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
+  email            :  houguangyu@ustc.edu
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -113,6 +113,7 @@ author:
   vine             :
   weibo            :
   xing             :
+  telegram         : "Gary_Hou"
   youtube          :
   wikipedia        :
 
