@@ -1,7 +1,361 @@
 ---
-title: "Portfolio item number 2"
-excerpt: "Short description of portfolio item number 2 <br/><img src='/images/500x300.png'>"
+title: "Resume-website"
+excerpt: "Frontend/css+html+javascript<br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<head>
+    <meta charset="utf-8"/>
+    <title>Guangyu Hou</title>
+    <style>
+    /* Main section part */
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #000000;
+            background-color: #EFF1F3;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: #000;
+        }
+        h1 {
+            font-size: 20px;
+            margin-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        h2 {
+            font-size: 12PX;
+            margin-top: 15px;
+            border-bottom: 1px solid #dddada;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .subtitle {
+            font-weight: bold;
+        }
+        /* Nav part */
+        nav {
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            align-items: center;
+          }
+          
+          nav .fa-solid {
+            display: none;
+          }
+          
+          nav img {
+            width: 50px;
+          }
+          
+          nav .nav-links {
+            flex: 1;
+            text-align: right;
+          }
+          
+          nav .nav-links ul {
+            list-style: none;
+          }
+          
+          nav .nav-links ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+          }
+          
+          nav .nav-links ul li::after {
+            content: "";
+            width: 0%;
+            height: 3px;
+            background: #36b8f4;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+          }
+          
+          nav .nav-links ul li:hover::after {
+            width: 100%;
+          }
+          
+          nav .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+          }
+
+        /* Others Tab */
+        .hero-tab {
+            overflow: hidden;
+            width: 80%;
+            height: 900px;
+            position: relative;
+            margin: 30px auto;
+          }
+          .hero-tab .btn-box {
+            justify-content: center;
+            display: flex;
+            border-bottom: 1px solid rgb(55, 53, 47);
+          }
+          .hero-tab .btn-box button {
+            font-size: 20px;
+            background: transparent;
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-right: 20px;
+            font-weight: bold;
+          }
+          .hero-tab .btn-box button .fa-brands {
+            margin-right: 20px;
+          }
+          .hero-tab .btn-box button:hover {
+            text-decoration: none;
+            color: #2e53ce;
+          }
+          .hero-tab .btn-box button:last-child {
+            margin-right: 0;
+          }
+          .hero-tab .content {
+            justify-content: center;
+            align-items: center;
+            margin: 10px auto;
+            position: absolute;
+            transform: translateX(150%);
+          }
+          .hero-tab #content1 {
+            transform: translateX(0);
+          }
+          /* media part */
+
+            @media screen and (max-width: 992px) { 
+            }
+    </style>
+</head>
+    <body>
+        <header>
+            <h1>Guangyu Hou</h1>
+            <div class="contact-info">
+                <a href="https://hougarry.github.io/"><i class="fa-solid fa-house"></i> Homepage</a>
+            |   <a href=mailto:“houguangyu@ustc.edu”><i class="fa-solid fa-envelope"></i> E-Mail</a>
+            |  <a href="https://github.com/hougarry"><i class="fa-brands fa-github"></i> Github</a>
+            |  <a href="https://hougarry.github.io/projects/"><i class="fa-solid fa-bars-progress"></i> Projects</a>
+            </div>
+        </header>
+        <div class="hero-tab">
+            <div class="btn-box">
+                <button class="boxbtn1" onclick="openEducation()"><i class="fa-solid fa-graduation-cap"></i> EDUCATION</button>
+                <button class="boxbtn2" onclick="openWORK()"><i class="fa-solid fa-building"></i> WORK/INTERN</button>
+                <button class="boxbtn3" onclick="openCAMPUS()"><i class="fa-solid fa-user-group"></i>CAMPUS</button>
+                <button class="boxbtn4" onclick="openOTHERS()"><i class="fa-solid fa-briefcase"></i> OTHERS</button>
+            </div>
+            <section class="content" id="content1" name="education">
+                <div class="ctnlist">
+                    <h3><i class="fa-solid fa-location-dot"></i>    University of Science and Technology of China</h3>
+                    <p class="subtitle">Master of Finance | Sept 2018 - Jul 2021</p>
+                    <p>School of Management</p>
+                    <ul>
+                        <li>Honors/Awards: National Graduate Fellowship (2018-2021)</li>
+                        <li>Relevant Coursework: Numerical Methods, Applied Statistical Methods, Machine Learning, Financial Data Analysis, Data Mining</li>
+                    </ul>
+                </div>
+                <div class="ctnlist">
+                    <h3><i class="fa-solid fa-location-dot"></i>    North University of China</h3>
+                    <p class="subtitle">Bachelor of Economic Statistics | Sept 2012 - Jul 2016</p>
+                    <p>School of Economics and Management</p>
+                    <ul>
+                        <li>Honors/Awards: Outstanding League Cadres, Debate Competition Excellent, Speech Contest Outstanding, Excellent Debate Instructor</li>
+                        <li>Relevant Coursework: Basis of Computer Engineering, Calculus, Linear Algebra, Statistics, Probability Theory &amp; Mathematical Statistics</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="content" id="content2" name="work">
+                <div class="ctnlist">
+                    <h3><i class="fa-solid fa-building"></i>    Freelancer</h3>
+                    <p class="subtitle">Working Online | Mar 2022 - Oct 2023</p>
+                    <ul>
+                        <li>
+                            <p>Working as finance tutor for Students who are preparing Chinese Graduates Exams- Major Code: 431 Finance</p>
+                        </li>
+                        <li>
+                            <p>Web Backend developer/ Python  --Services on homepage </p>
+                        </li>
+                </div>
+                <div class="ctlist">
+                    <h3><i class="fa-solid fa-building"></i>    GuoYuan Securities Company Limited</h3>
+                    <p class="subtitle">Investment Banking Department | Mar 2020 - Oct 2020</p>
+                    <p>Project: Anhui Telit Science and Technology Company Limited / Anhui Hitong Holding Group Company Limited IPO</p>
+                    <ul>
+                        <li>
+                            <p>Check the purchase and sales contracts of the company in the past three years, count the warehouse inventory;</p>
+                        </li>
+                        <li>
+                            <p>Inquire about the banks and customers with the company on relevant projects;</p>
+                        </li>
+                        <li>
+                            <p>Collect and sort out the working papers and materials required by the company for listing;</p>
+                        </li>
+                        <li>
+                            <p>Verify and check the bank flow of the company's senior management.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ctlist">
+                    <h3><i class="fa-solid fa-building"></i>    Shanxi Huahong Technology Company Limited</h3>
+                    <p class="subtitle">Salesman | Sales Department | Aug 2016 – Feb 2018</p>
+                    <ul>
+                        <li>
+                            <p>Responsible for the sales of notebook computers, the information research of Taiyuan computer city market and the development of sales business channels.</p>
+                        </li>
+                        <li >
+                            <p>Help the company increase new channels of campus procurement, mainly responsible for doing road shows on the university campus, developing campus agents, increasing customers, and improving the sales volume of the company.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="content" id="content3" name="campus">
+                <div class="ctlist">
+                    <h3><i class="fa-solid fa-user-group"></i>   Tsinghua University PBC School of Finance</h3>
+                    <p class="subtitle">Research Group on trade friction between U.S. and China | Mar 2019 - Mar 2020</p>
+                    <ul >
+                        <li>
+                            <p>Collect and sort out relevant international and domestic macroeconomic policies and conference materials;</p>
+                        </li>
+                        <li>
+                            <p>Conduct qualitative and quantitative data statistical analysis and write some assigned research reports;</p>
+                        </li>
+                        <li>
+                            <p>Be responsible for other work required during the operation of the research group.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ctlist">
+                    <h3><i class="fa-solid fa-user-group"></i>  The Debate team of School in North University of China</h3>
+                    <p class="subtitle">Debater/Team Coach | Sept 2012 - Jul 2015</p>
+                        <ul>
+                            <li>
+                                <p>In the spring semester of freshman year, joined the debate team of class 241 and won the excellent debater (10/72) and the Second Runner-up team (3/18) in the whole school; In the summer semester, participated in the debate team of school in the summer semester and won the excellent debater (26/176) in the whole university.</p>
+                            </li>
+                            <li>
+                                <p>In the spring semester of sophomore year, as the coach of the class 742 team and won the Champion team (1/18) in the whole school; In the summer semester, as the vice coach of the school team and won the Champion team (1/44) in the whole university.</p>
+                            </li>
+                            <li>
+                                <p>In the spring semester of junior year, as the coach of the class 342 team and won the Runner-up team (2/18) in the whole school; In the summer semester, as the coach of the school team and won the Top Eight teams (8/44) in the whole university.</p>
+                            </li>
+                        </ul>
+                    <p class="subtitle"><i class="fa-solid fa-user-group"></i>  Other Activities</p>
+                        <UL>
+                            <li>
+                                <p>The vice minister of the public relations department of the Student Government</p>
+                            <li>
+                                <p>The monitor of class 241 </p>
+                            </li>
+                            <li>
+                                <p>The  minister of the public relations department of Youth Leagues of school</p> 
+                            </li>                    
+                        </UL>
+                </div>
+            </section>
+            <section class="content" id="content4" name="others">
+                <div class="ctnlist">
+                    <h3><i class="fa-solid fa-medal"></i>   Publications</h3>
+                        <p>“Problems and countermeasures of private equity under the new normal” (in Chinese), 2020. <i>Journal of Regional Financial Research.</i></p>
+                        <p>“Research on the Impact of Venture Capital on the Innovation of Small and Medium-sized Enterprises” (in Chinese), with Zhiying, Liu and Hongfang, Mo, 2021. <i>Journal of Shanxi University of Finance and Economics</i></p>
+                </div>
+                <div class="ctnlist">
+                    <h3><i class="fa-solid fa-medal"></i>   Certifications</h3>
+                    <p>Securities qualification Certificate, Fund qualification certificate</p>
+    
+                </div>      
+                <div class="ctnlist">                   
+                    <h3><i class="fa-solid fa-medal"></i>    Online Courses</h3>
+                    <p>Panel data analysis and Stata application, Zhejiang University (in Mooc online), grade in 97/100.</p>
+                </div>
+            </section>
+        </div>
+
+        <script>
+            var content1 = document.getElementById("content1");
+            var content2 = document.getElementById("content2");
+            var content3 = document.getElementById("content3");
+            var content4 = document.getElementById("content4");
+            var boxbtn1 = document.getElementById("boxbtn1");
+            var boxbtn2 = document.getElementById("boxbtn2");
+            var boxbtn3 = document.getElementById("boxbtn3");
+            var boxbtn4 = document.getElementById("boxbtn4");
+
+            function openEducation() {
+                content1.style.transform = "translateX(0%)";
+                content2.style.transform = "translateX(150%)";
+                content3.style.transform = "translateX(150%)";
+                content4.style.transform = "translateX(150%)";
+            }
+
+            function openWORK() {
+                content1.style.transform = "translateX(200%)";
+                content2.style.transform = "translateX(0%)";
+                content3.style.transform = "translateX(150%)";
+                content4.style.transform = "translateX(150%)";
+            }
+
+            function openCAMPUS() {
+                content1.style.transform = "translateX(200%)";
+                content2.style.transform = "translateX(150%)";
+                content3.style.transform = "translateX(0%)";
+                content4.style.transform = "translateX(150%)";
+            }
+            function openOTHERS() {
+                content1.style.transform = "translateX(200%)";
+                content2.style.transform = "translateX(150%)";
+                content3.style.transform = "translateX(150%)";
+                content4.style.transform = "translateX(0%)";
+            }
+        </script>
+    </body>
+</html>
+
