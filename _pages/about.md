@@ -9,9 +9,13 @@ redirect_from:
 ---
 # Hi, I'm Gary! :wave:
 
+## 📫 Notice
+[Resume](https://hougarry.github.io/resume) | [Projects](https://hougarry.github.io/projects/)  | [Blog](https://hougarry.github.io/blog/) | [Link](https://hougarry.github.io/link/) |  [Email](mailto:houguangyu@ustc.edu)
+
 I'm a **Web Backend developer** based in China, dedicated to crafting exceptional websites, applications, and more.
 
-## 🚀 Technologies & Frameworks 
+
+## 🚀 TechStack & Frameworks 
 
 | **Category**   | **Technology/Framework**  | **Description**                           |
 |----------------|---------------------------|-------------------------------------------|
@@ -23,7 +27,7 @@ I'm a **Web Backend developer** based in China, dedicated to crafting exceptiona
 | **Data Storage** | Databases              | MongoDB (NoSQL), MySQL (Relational) 🗄️     |
 |                | Data Visualization       | D3.js (JavaScript), Matplotlib (Python) 📊 |
 | **Server & Deployment** | Server          | Ubuntu + Gunicorn + Nginx/Docker 🐳       |
-|                | Deployment & CI/CD       | GitHub/Vercel/CloudPage/GoogleCloud ☁️    |
+|                | Deployment & CI/CD       | GitHub/Vercel/CloudFlarePage/GoogleCloud ☁️    |
 |                | Serverless               | Serverless 🌩️                            |
 
 ## 🤵 About Me 
@@ -38,9 +42,4 @@ I'm a **Web Backend developer** based in China, dedicated to crafting exceptiona
   - Also worked with a notable tech firm 🖥️.
 - 🌟 **Expertise**: Finance 📈, programming 💻, and AI Prompt Engineering 🤖.
 
-## 📫 Get in touch
-[Resume](https://hougarry.github.io/resume)
-[Projects](https://hougarry.github.io/projects/)
-[Blog](https://blog.garyhou2023.info/)
-[Link](https://www.garyhou2023.info/)
-[Email](mailto:houguangyu@ustc.edu)
+
