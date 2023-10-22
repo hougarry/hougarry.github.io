@@ -4,7 +4,7 @@
 
 # As for my personal website and see more info, 
 
-# please visit https://hougarry.github.io/portfolio/
+# please visit [Projects](https://hougarry.github.io/projects/)
 
 
 
