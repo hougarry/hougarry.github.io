@@ -7,10 +7,12 @@ redirect_from:
   - /about/
   - /about.html
 ---
-# Hi, I'm Gary! :wave:
+
 
 ## 📫 Notice
 [Resume](https://hougarry.github.io/resume) | [Projects](https://hougarry.github.io/projects/)  | [Blog](https://hougarry.github.io/blog/) | [Link](https://hougarry.github.io/link/) |  [Email](mailto:houguangyu@ustc.edu)
+
+Hi, I'm Gary! :wave:
 
 I'm a **Web Backend developer** based in China, dedicated to crafting exceptional websites, applications, and more.
 
