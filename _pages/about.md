@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Welcome to my academic website!"
+title: ""
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,11 +8,12 @@ redirect_from:
   - /about.html
 ---
 
-[Resume](https://hougarry.github.io/resume) | [Projects](https://hougarry.github.io/projects/)  | [Blog](https://hougarry.github.io/blog/) | [Link](https://hougarry.github.io/link/) |  [Email](mailto:houguangyu@ustc.edu) |[Notes]()
+[Resume](https://hougarry.github.io/resume) | [Projects](https://hougarry.github.io/projects/)  | [Blog](https://hougarry.github.io/blog/) | [Link](https://hougarry.github.io/link/) |  [Email](mailto:houguangyu@ustc.edu) |[Notes](https://gary-hou.gitbook.io/projects/)
 
 
 A **Web Backend /Python developer** 
-
+- Javascript, Html, css
+- Python, Java
 
 ## 🚀 TechStack & Frameworks 
 
