@@ -8,13 +8,10 @@ redirect_from:
   - /about.html
 ---
 
+[Resume](https://hougarry.github.io/resume) | [Projects](https://hougarry.github.io/projects/)  | [Blog](https://hougarry.github.io/blog/) | [Link](https://hougarry.github.io/link/) |  [Email](mailto:houguangyu@ustc.edu) |[Notes]()
 
-## 📫 Notice
-[Resume](https://hougarry.github.io/resume) | [Projects](https://hougarry.github.io/projects/)  | [Blog](https://hougarry.github.io/blog/) | [Link](https://hougarry.github.io/link/) |  [Email](mailto:houguangyu@ustc.edu)
 
-Hi, I'm Gary! :wave:
-
-I'm a **Web Backend developer** based in China, dedicated to crafting exceptional websites, applications, and more.
+A **Web Backend /Python developer** 
 
 
 ## 🚀 TechStack & Frameworks 
@@ -40,7 +37,7 @@ I'm a **Web Backend developer** based in China, dedicated to crafting exceptiona
   - Bachelor's in Economics with an emphasis on statistics
   - Master's in Finance, focusing on Big Data and Financial Technology
 - 🌆 **Experience**:
-  - Once contributed to the investment banking team at a renowned securities company 🏦.
+  - Once work in an investment banking team at a renowned securities company 🏦.
   - Also worked with a notable tech firm 🖥️.
 - 🌟 **Expertise**: Finance 📈, programming 💻, and AI Prompt Engineering 🤖.
 
