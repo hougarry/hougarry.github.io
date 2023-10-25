@@ -8,12 +8,10 @@ redirect_from:
   - /about.html
 ---
 
-[Resume](https://hougarry.github.io/resume) | [Projects](https://hougarry.github.io/projects/)  | [Blog](https://hougarry.github.io/blog/) | [Link](https://hougarry.github.io/link/) |  [Email](mailto:houguangyu@ustc.edu)  |  [Notes](https://gary-hou.gitbook.io/projects/)
+[Resume](https://hougarry.github.io/resume) | [Projects](https://hougarry.github.io/projects/)   
+[Blog](https://hougarry.github.io/blog/)  | [Link](https://hougarry.github.io/link/)   
+[Email](mailto:houguangyu@ustc.edu)  |  [Notes](https://gary-hou.gitbook.io/projects/)
 
-
-A **Web Backend /Python developer** 
-- Javascript, Html, css
-- Python, Java
 
 ## 📚 Recent Projects
 
@@ -21,21 +19,24 @@ For more projects, please visit [Projects](https://hougarry.github.io/projects/)
 
 ### [📈 CryptoDashboard](http://159.223.207.23:3000/)
 
-- **Description**: A web dashboard for crypto currency exchange rates and news, with API from RapidAPI.
-- **TechStack**: 
-[Frontend](http://159.223.207.23:3000/): React.js, Bootstrap, Sass 
-[Backend]((http://159.223.207.23:4000/)): Node.js
-[Database](http://159.223.207.23:4000/news): JSON
+**Description**: A web dashboard for crypto currency exchange rates and news, with API from RapidAPI.
+**TechStack**: 
+-[Frontend](http://159.223.207.23:3000/): React.js, Bootstrap, Sass 
+-[Backend]((http://159.223.207.23:4000/)): Node.js
+-[Database](http://159.223.207.23:4000/news): JSON
 
 ### [🧳django-portofolio](http://159.223.207.23:8000/)
 
-- **Description**: A portofolio website based on Django framework.
-- **TechStack**:
-[Frontend](http://159.233.207.23:8000/): HTML, CSS, Bootstrap, Sass, JavaScript
-[Backend](http://159.233.207.23:8000/admin): Django
-[Account](http://159.233.207.23:8000/admin): Login-Username: demo, Password: demo123456
-[Database] django default database- SQLite
+**Description**: A portofolio website based on Django framework.
+**TechStack**:
+-[Frontend](http://159.233.207.23:8000/): HTML, CSS, Bootstrap, Sass, JavaScript
+-[Backend](http://159.233.207.23:8000/admin): Django
+-[Account](http://159.233.207.23:8000/admin): Login-Username: demo, Password: demo123456
+-[Database] django default database- SQLite
 
+## 📝 Main skills
+- Javascript, Html, css
+- Python, Java
 
 ## 🚀 TechStack & Frameworks 
 
