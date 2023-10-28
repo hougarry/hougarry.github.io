@@ -61,12 +61,12 @@ For more projects, please visit [Projects](https://hougarry.github.io/projects/)
 |                | Data Visualization       | D3.js (JavaScript), Matplotlib (Python) 📊 |
 | **Server & Deployment** | Server          | Ubuntu + Gunicorn + Nginx/Docker 🐳       |
 |                | Deployment & CI/CD       | GitHub/Vercel/CloudFlarePage/GoogleCloud ☁️    |
-|                | Serverless               | Serverless 🌩️                            |
+
 
 ## 🤵 About Me 
 
 - 🙋 **Introduction**: Hey there! I'm Gary.
-- 🧳 **Roles**: Coder, Financial Analyst, and Explorer
-- 🌟 **Areas**: Finance 📈, programming 💻, and AI Prompt Engineering 🤖.
+- 🧳 **Roles**: Coder, Financial Analyst
+- 🌟 **Areas**: Finance 📈, programming 
 
 
