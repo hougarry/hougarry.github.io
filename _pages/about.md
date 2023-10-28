@@ -20,19 +20,29 @@ For more projects, please visit [Projects](https://hougarry.github.io/projects/)
 ### [📈 CryptoDashboard](http://159.223.207.23:3000/)
 
 **Description**: A web dashboard for crypto currency exchange rates and news, with API from RapidAPI.
+
 **TechStack**: 
 -[Frontend](http://159.223.207.23:3000/): React.js, Bootstrap, Sass 
+
 -[Backend]((http://159.223.207.23:4000/)): Node.js
+
 -[Database](http://159.223.207.23:4000/news): JSON
+-[Deploy] Ubuntu + PM2 
 
 ### [🧳django-portofolio](http://159.223.207.23:8000/)
 
 **Description**: A portofolio website based on Django framework.
+
 **TechStack**:
 -[Frontend](http://159.233.207.23:8000/): HTML, CSS, Bootstrap, Sass, JavaScript
+
 -[Backend](http://159.233.207.23:8000/admin): Django
+
 -[Account](http://159.233.207.23:8000/admin): Login-Username: demo, Password: demo123456
+
 -[Database] django default database- SQLite
+
+-[Deploy] Ubuntu + Gunicorn + Nginx( Docker Image)
 
 ## 📝 Main skills
 - Javascript, Html, css
