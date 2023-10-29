@@ -27,6 +27,7 @@ For more projects, please visit [Projects](https://hougarry.github.io/projects/)
 -[Backend]((http://159.223.207.23:4000/)): Node.js
 
 -[Database](http://159.223.207.23:4000/news): JSON
+
 -[Deploy] Ubuntu + PM2 
 
 ### [🧳django-portofolio](http://159.223.207.23:8000/)
