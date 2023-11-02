@@ -8,8 +8,8 @@ redirect_from:
   - /about.html
 ---
 
-| [Resume](https://hougarry.github.io/resume) | [Projects showcase](https://hougarry.github.io/projects/) | [Blog](https://hougarry.github.io/blog/) |
-| [Link](https://hougarry.github.io/link/) | [Email](mailto:houguangyu@ustc.edu) | [Notes](https://gary-hou.gitbook.io/projects/) |
+| [Resume](https://hougarry.github.io/resume) | [Projects showcase](https://hougarry.github.io/projects/) | [Blog](https://blog.garyhou2023.info/) |
+| [Link](https://www.garyhou2023.info/) | [Email](mailto:houguangyu@ustc.edu) | [Notes](https://gary-hou.gitbook.io/notes-cs/) |
 
 
 
