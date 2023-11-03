@@ -49,6 +49,35 @@ redirect_from:
         h3 {
             color: #555;
         }
+        /* Quotation styles */
+        blockquote {
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid #2a9d8f;
+            background-color: #f9f9f9;
+            font-style: italic;
+            overflow: hidden;
+        }
+        blockquote::before {
+            content: open-quote;
+            font-size: 4em;
+            line-height: 0.1em;
+            margin-right: 10px;
+            vertical-align: -0.4em;
+            color: #2a9d8f;
+        }
+        blockquote::after {
+            content: close-quote;
+            font-size: 4em;
+            line-height: 0.1em;
+            margin-left: 10px;
+            vertical-align: -0.4em;
+            color: #2a9d8f;
+        }
+        blockquote p {
+            display: inline;
+            font-size: 1.2em;
+        }
     </style>
 </head>
 <body>
@@ -63,6 +92,9 @@ redirect_from:
             <td><a href="https://gary-hou.gitbook.io/notes-cs/" target="_blank">Notes</a></td>
         </tr>
     </table>
+    <blockquote>
+        <p>"This is the best era for self-learners, with access to learning resources through Google and using ChatGPT as a learning mentor. However, this is also the worst era for ordinary individuals, as technological growth is exploding, and the influence of capital outweighs everything else."</p>
+    </blockquote>
 
     <h2>📚 Recent Projects</h2>
     <p>For more projects, please visit <a href="https://hougarry.github.io/projects/" target="_blank">Projects</a></p>
