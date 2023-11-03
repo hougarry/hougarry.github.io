@@ -25,6 +25,7 @@ redirect_from:
             width: 100%;
             table-layout: fixed;
             border-collapse: collapse;
+            word-wrap: break-word; /*this will make sure long words get broken up correctly */
         }
         /* Style the table cells */
         td {
@@ -35,7 +36,7 @@ redirect_from:
         /* Add styles for the links to make them stand out */
         a {
             text-decoration: none;
-            color: #007bff;
+            color: #2a9d8f;
             font-weight: bold;
         }
         a:hover {
@@ -81,8 +82,8 @@ redirect_from:
     <p><strong>TechStack</strong>:</p>
     <ul>
         <li><a href="http://159.233.207.23:8000/" target="_blank">Frontend</a>: HTML, CSS, Bootstrap, Sass, JavaScript</li>
-        <li><a href="http://159.233.207.23:8000/admin" target="_blank">Backend</a>: Django</li>
-        <li><a href="http://159.233.207.23:8000/admin" target="_blank">Account</a>: Login-Username: demo, Password: demo123456</li>
+        <li><a href="http://159.223.207.23:8000/admin/login/?next=/admin/" target="_blank">Backend</a>: Django</li>
+        <li><a href="http://159.223.207.23:8000/admin/login/?next=/admin/" target="_blank">Account</a>: Login-Username: demo, Password: demo123456</li>
         <li>Database: Django default database - SQLite</li>
         <li>Deploy: Ubuntu + Gunicorn + Nginx (Docker Image)</li>
     </ul>
