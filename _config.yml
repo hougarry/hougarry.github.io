@@ -83,11 +83,11 @@ author:
   name             : "Gary Hou"
   avatar           : "profile.png"
   bio              : "A Web-backend developer"
-  location         : "China"
+  location         : "Nomad"
   employer         :
   pubmed           : "https://www.freecodecamp.org/Gary_Hou"
   googlescholar    : 
-  email            :  
+  email            :  "houguangyu@ustc.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -113,7 +113,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  telegram         : "Gary_Hou"
+  telegram         : "https://t.me/Gary_Hou"
   youtube          :
   wikipedia        :
 
