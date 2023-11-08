@@ -78,6 +78,63 @@ redirect_from:
             display: inline;
             font-size: 1.2em;
         }
+        .detail{
+            position:fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0); /* 50% of the width, 50% of the height, sclale 0 to hide it */
+            transition:  200ms ease-in-out;   /* this is to have a smooth transition */
+            border: 2px solid ;
+            border-radius: 10px;
+            z-index: 10;
+            background-color: #fff;
+            width: 500px;
+            max-width: 80%;
+        }
+        
+        .detail.active{
+            transform: translate(-50%, -50%) scale(1);
+        }
+        
+        .detail-header{
+            padding: 10px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+        
+        }
+        .detail-heaer .title{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .detail-header .close-button{
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: 600;
+            color: none;
+            outline: none;
+            border: none;
+            background-color: none;
+        }
+        .detail-body{
+            padding: 10px 15px;
+        }
+        #overlay{
+            position: fixed; /* overlay is to cover the background */
+            transition: 200ms ease-in-out; /* this is to have a smooth transition */
+            opacity: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, .5); /* black with 50% opacity */
+            pointer-events: none; /* this is to *not* have the overlay clickable */
+        }
+        #overlay.active{
+            opacity: 1;
+            pointer-events: all; /* this active overlay will be clickable */
+        }
     </style>
 </head>
 <body>
@@ -98,27 +155,50 @@ redirect_from:
 
     <h2>📚 Recent Projects</h2>
     <p>For more projects, please visit <a href="https://hougarry.github.io/projects/" target="_blank">Projects</a></p>
-    
-    <h3><a href="http://159.223.207.23:3000/" target="_blank">📈 CryptoDashboard</a></h3>
-    <p><strong>Description</strong>: A web dashboard for cryptocurrency exchange rates and news, with API from RapidAPI.</p>
-    <p><strong>TechStack</strong>:</p>
-    <ul>
-        <li><a href="http://159.223.207.23:3000/" target="_blank">Frontend</a>: React.js, Bootstrap, Sass</li>
-        <li><a href="http://159.223.207.23:4000/" target="_blank">Backend</a>: Node.js</li>
-        <li><a href="http://159.223.207.23:4000/news" target="_blank">Database</a>: JSON</li>
-        <li>Deploy: Ubuntu + PM2</li>
-    </ul>
-    
-    <h3><a href="http://159.223.207.23:8000/" target="_blank">🧳django-portofolio</a></h3>
-    <p><strong>Description</strong>: A portfolio website based on the Django framework.</p>
-    <p><strong>TechStack</strong>:</p>
-    <ul>
-        <li><a href="http://159.233.207.23:8000/" target="_blank">Frontend</a>: HTML, CSS, Bootstrap, Sass, JavaScript</li>
-        <li><a href="http://159.223.207.23:8000/admin/login/?next=/admin/" target="_blank">Backend</a>: Django</li>
-        <li><a href="http://159.223.207.23:8000/admin/login/?next=/admin/" target="_blank">Account</a>: Login-Username: demo, Password: demo123456</li>
-        <li>Database: Django default database - SQLite</li>
-        <li>Deploy: Ubuntu + Gunicorn + Nginx (Docker Image)</li>
-    </ul>
+
+
+    <div class="detail-pop">
+        <button data-detail-target="#detail1">CryptoDashboard</button>
+        <div class="detail " id="detail1">
+            <div class="detail-header">CryptoDashboard
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            
+            <div class="detail-body">
+                <h3><a href="http://159.223.207.23:3000/" target="_blank">📈 CryptoDashboard</a></h3>
+                <p><strong>Description</strong>: A web dashboard for cryptocurrency exchange rates and news, with API from RapidAPI.</p>
+                <p><strong>TechStack</strong>:</p>
+                <ul>
+                    <li><a href="http://159.223.207.23:3000/" target="_blank">Frontend</a>: React.js, Bootstrap, Sass</li>
+                    <li><a href="http://159.223.207.23:4000/" target="_blank">Backend</a>: Node.js</li>
+                    <li><a href="http://159.223.207.23:4000/news" target="_blank">Database</a>: JSON</li>
+                    <li>Deploy: Ubuntu + PM2</li>
+                </ul>
+            </div>
+        </div>
+        <div id="overlay"></div>
+    </div>
+    <div class="detail-pop">
+        <button data-detail-target="#detail2">django-portofolio</button>
+        <div class="detail" id="detail2">
+            <div class="detail-header">django-portofolio
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            
+            <div class="detail-body">
+                <h3><a href="http://159.223.207.23:8000/" target="_blank">🧳django-portofolio</a></h3>
+                <p><strong>Description</strong>: A portfolio website based on the Django framework.</p>
+                <p><strong>TechStack</strong>:</p>
+                <ul>
+                    <li><a href="http://159.233.207.23:8000/" target="_blank">Frontend</a>: HTML, CSS, Bootstrap, Sass, JavaScript</li>
+                    <li><a href="http://159.223.207.23:8000/admin/login/?next=/admin/" target="_blank">Backend</a>: Django</li>
+                    <li><a href="http://159.223.207.23:8000/admin/login/?next=/admin/" target="_blank">Account</a>: Login-Username: demo, Password: demo123456</li>
+                    <li>Database: Django default database - SQLite</li>
+                    <li>Deploy: Ubuntu + Gunicorn + Nginx (Docker Image)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
     
 
     <h2>📝 Main skills</h2>
@@ -188,6 +268,45 @@ redirect_from:
         <li>Roles: Coder, Financial Analyst</li>
         <li>Areas: Finance 📈, programming</li>
     </ul>
+    <script>
+        const openDetailButtons = document.querySelectorAll('[data-detail-target]')
+        const closeDetailButtons = document.querySelectorAll('[data-close-button]')
+        const overlay = document.getElementById('overlay')
 
+        openDetailButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const detail = document.querySelector(button.dataset.detailTarget)
+                openDetail(detail)
+            })
+        })
+
+
+        function openDetail(detail) {
+            if (detail == null) return
+            detail.classList.add('active')
+            overlay.classList.add('active')
+        }
+
+
+        closeDetailButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const detail = button.closest('.detail')
+                closeDetail(detail)
+            })
+        })
+
+        function closeDetail(detail) {
+            if (detail == null) return
+            detail.classList.remove('active')
+            overlay.classList.remove('active')
+        }
+        overlay.addEventListener('click', () => {
+            const details = document.querySelectorAll('.detail.active')
+            details.forEach(detail => {
+                closeDetail(detail)
+            })
+        })
+
+    </script>
 </body>
 </html>
